@@ -31,16 +31,29 @@
             <p style="line-height: 40px; width: 51%;margin: auto; font-size: 20px;">Beauty comes in all shapes and sizes. Small, large, circle, square, thin crust, thick crust, extra toppings. Pizza is one of the most popular foods in the world, and for good reason! It’s affordable, delicious, and there’s an option for everyone.</p>
             <div class="image-video" id="image-video-container">
                 <img src="imgs/section-video-thumbnail.png" alt="">
-                <i id="play-button" class="fa-solid fa-circle-play play-video"></i>
+                <i id="play-button" class="fa-solid fa-circle-play play-video" data-bs-toggle="modal" data-bs-target="#videoModal"></i>
             </div>
-            <div id="video-container" style="display: none;">
+
+            <!-- <div id="video-container" style="display: none;">
                 <video id="video-player" width="width: 100%" height="400">
                     <source src="imgs/c7cdf3d8be992146b2ba1648482a942b.mp4" type="video/mp4">
                 </video>
                 <button id="close-button" class="close-button">✖</button>
                 <button id="pause-button" class="pause-button">Pause</button>
+            </div> -->
+
+            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg bg-dark">
+                    <div class="modal-content border-0 bg-dark ">
+                        <div class="modal-body border-0 bg-dark">
+                            <button type="button" class="bg-dark" data-bs-dismiss="modal" aria-label="Close" style="color: #ffffff;">Close</button>
+                            <video id="video-player" class="border-0" style="max-width: 400px; margin: auto;" controls>
+                                <source src="imgs/c7cdf3d8be992146b2ba1648482a942b.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     </section>
     <!-- ---------------------------------------end of first section---------------------------------------------- -->
 
