@@ -27,12 +27,12 @@
 //     imageVideo.style.display = 'block';
 // };
 
-document.getElementById('close-button').onclick = function() {
-    var video = document.getElementById('video-player');
-    var modal = document.getElementById('videoModal');
-    video.pause();
-    modal.hide();
-};
+// document.getElementById('close-button').onclick = function() {
+//     var video = document.getElementById('video-player');
+//     var modal = document.getElementById('videoModal');
+//     video.pause();
+//     modal.hide();
+// };
 
 document.getElementById('play-button').onclick = function() {
     var videoModal = new bootstrap.Modal(document.getElementById('videoModal'));
